@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 public class Rainbow extends JPanel
 {
   // Declare skyColor:
-	private Color skyColor;	
+	private Color skyColor = Color.CYAN;	
   // ________________________________________________
 
   public Rainbow()
@@ -19,37 +19,18 @@ public class Rainbow extends JPanel
     setBackground(skyColor);
   }
 
-  // Draws the rainbow.
   public void paintComponent(Graphics g)
   {
     super.paintComponent(g);
     int width = getWidth();    
     int height = getHeight();
-
-    // Declare and initialize local int variables xCenter, yCenter
-    // that represent the center of the rainbow rings:
-    // ________________________________________________
- 
-    // Declare and initialize the radius of the large semicircle:
-    // ________________________________________________
+    double xCenter = 1/2*width;
+    double yCenter = 1/2*height;
+    double largeRadius = 1.4*width;
 
     g.setColor(Color.RED);
-    {
-    // Draw the large semicircle:
-    // g.fillArc( ______________ );
-
-    // Declare and initialize the radii of the small and medium
-    // semicircles and draw them:
-    // ________________________________________________
-
-    // Calculate the radius of the innermost (sky-color) semicircle
-    // so that the width of the middle (green) ring is the
-    // arithmetic mean of the widths of the red and magenta rings:
-    // ________________________________________________
-
-    // Draw the sky-color semicircle:
-    // ________________________________________________
-    }}
+    }
+ g.fillArc(x, y, size, size, from, degrees);
 
   public static void main(String[] args)
   {

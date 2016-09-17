@@ -27,10 +27,11 @@ public class Rainbow extends JPanel
     double xCenter = 1/2*width;
     double yCenter = 1/2*height;
     double largeRadius = 1.4*width;
-
+   
     g.setColor(Color.RED);
+	g.fillArc(getX(),getY(),getSize(), getSize(),int from, int degrees);
     }
- g.fillArc(x, y, size, size, from, degrees);
+ 
 
   public static void main(String[] args)
   {

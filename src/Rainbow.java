@@ -7,7 +7,10 @@ import java.awt.Graphics;
 import java.awt.Container;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+import java.awt.Graphics;
+import java.awt.Container;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 public class Rainbow extends JPanel
 {
   // Declare skyColor:
@@ -22,16 +25,23 @@ public class Rainbow extends JPanel
   public void paintComponent(Graphics g)
   {
     super.paintComponent(g);
+    super.paintComponent(g);
     int width = getWidth();    
     int height = getHeight();
-    double xCenter = 1/2*width;
-    double yCenter = 1/2*height;
-    double largeRadius = 1.4*width;
+    int xCenter = width/2;
+	int yCenter = (height*3) / 4;
+    int LargeRadius = width/4;
+	int MiddleRadius = height*1/4;
+   // red(big) part
+	g.setColor(Color.RED);
+   g.fillArc(xCenter - LargeRadius/2, yCenter - LargeRadius/2 + LargeRadius/4 -height/4, LargeRadius, LargeRadius,0,180);
+   // magenta(middle)
+   g.setColor(Color.MAGENTA);
+   int geoMean = MiddleRadius * LargeRadius; 
+   int smallRadius = (int) Math.sqrt(geoMean);
+   g.fillArc(xCenter-(smallRadius)/2, yCenter-(smallRadius)/2 + LargeRadius/4 -height/4, smallRadius, smallRadius, 0, 180);
+  }
    
-    g.setColor(Color.RED);
-	g.fillArc(getX(),getY(),getSize(), getSize(),int from, int degrees);
-    }
- 
 
   public static void main(String[] args)
   {

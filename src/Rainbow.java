@@ -1,7 +1,5 @@
 // Chapter 5 Question 27
-
-// ________________________________________________
-
+// there are legends in stackoverflow
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Container;
@@ -37,9 +35,16 @@ public class Rainbow extends JPanel
    g.fillArc(xCenter - LargeRadius/2, yCenter - LargeRadius/2 + LargeRadius/4 -height/4, LargeRadius, LargeRadius,0,180);
    // magenta(middle)
    g.setColor(Color.MAGENTA);
-   int geoMean = MiddleRadius * LargeRadius; 
-   int smallRadius = (int) Math.sqrt(geoMean);
+   int Mean = MiddleRadius * LargeRadius; 
+   int smallRadius = (int) Math.sqrt(Mean);
    g.fillArc(xCenter-(smallRadius)/2, yCenter-(smallRadius)/2 + LargeRadius/4 -height/4, smallRadius, smallRadius, 0, 180);
+   g.setColor(Color.GREEN);
+   g.fillArc(xCenter-(MiddleRadius)/2, yCenter-(MiddleRadius)/2 + LargeRadius/4 -height/4, MiddleRadius, MiddleRadius, 0, 180);
+   
+   int tinyRadius = (LargeRadius+MiddleRadius+smallRadius)/5;
+   g.setColor(skyColor);
+   g.fillArc(xCenter-(tinyRadius)/2,yCenter-(tinyRadius)/2 + LargeRadius/4 - height/4,tinyRadius,tinyRadius,0,180);
+   
   }
    
 

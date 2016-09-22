@@ -20,8 +20,7 @@ public static void main(String[] args)
     		System.out.print(i + ", ");
 }
     	// loop going forever
-    	 for (int j = 1; j <= 1000; i++)
-	        {
+    	 for (int j = 1; j <= 1000; i++) {
 	            //if (i%2 != 0)
 	            if (j%2 == 1) //odd number
 	            {

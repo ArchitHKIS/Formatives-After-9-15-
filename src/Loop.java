@@ -19,6 +19,7 @@ public static void main(String[] args)
     	if( i % 2 == 0){
     		System.out.print(i + ", ");
 }
+    	// loop going forever
     	 for (int j = 1; j <= 1000; i++)
 	        {
 	            //if (i%2 != 0)

@@ -1,8 +1,8 @@
 class Conditional{
     public static void main(String[] args)
     {
-        System.out.print(2+", ");
-        for (int i = 1; i < 1000; i++)
+        System.out.print(2);
+        for (int i = 3; i < 1000; i++)
         {
             if (i%2 == 1)
             {

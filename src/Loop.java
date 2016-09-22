@@ -25,7 +25,7 @@ public static void main(String[] args)
 	            //if (i%2 != 0)
 	            if (j%2 == 1) //odd number
 	            {
-	                boolean isPrime = true;
+	            	boolean isPrime = true;
 	                for (int k = j-1 ; k>= 2 ; k = k - 1)
 	                {
 	                    if (i % k == 0)

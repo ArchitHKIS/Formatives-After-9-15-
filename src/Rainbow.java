@@ -1,4 +1,5 @@
 // Chapter 5 Question 27
+//got some help from Marcus 
 // there are legends in stackoverflow
 import java.awt.Color;
 import java.awt.Graphics;
@@ -38,10 +39,11 @@ public class Rainbow extends JPanel
    int Mean = MiddleRadius * LargeRadius; 
    int smallRadius = (int) Math.sqrt(Mean);
    g.fillArc(xCenter-(smallRadius)/2, yCenter-(smallRadius)/2 + LargeRadius/4 -height/4, smallRadius, smallRadius, 0, 180);
+   //green
    g.setColor(Color.GREEN);
    g.fillArc(xCenter-(MiddleRadius)/2, yCenter-(MiddleRadius)/2 + LargeRadius/4 -height/4, MiddleRadius, MiddleRadius, 0, 180);
-   
    int tinyRadius = (LargeRadius+MiddleRadius+smallRadius)/5;
+   //sky color 
    g.setColor(skyColor);
    g.fillArc(xCenter-(tinyRadius)/2,yCenter-(tinyRadius)/2 + LargeRadius/4 - height/4,tinyRadius,tinyRadius,0,180);
    

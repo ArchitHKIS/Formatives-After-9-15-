@@ -1,4 +1,3 @@
-
 public class UserInfo2 {
 	private String name;
 	private int Staffid;

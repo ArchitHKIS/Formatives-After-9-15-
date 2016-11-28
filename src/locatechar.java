@@ -10,7 +10,7 @@ public class locatechar {
 		char[] dong = ding.toCharArray();
 		for(int i = 0; i < bobo.length(); i++){
 			if(dodo[i] == dong[0]){
-				System.out.println(i);
+				System.out.print(i+", ");
 			}
 		}
 	}

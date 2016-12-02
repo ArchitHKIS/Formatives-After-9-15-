@@ -6,6 +6,7 @@ public class SoundTest {
 		Sound Sound = new Sound();
 		int values = Sound.limitAmplitude(2000);
 		System.out.println(values);
+		
 
 	}
 

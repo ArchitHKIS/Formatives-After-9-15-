@@ -22,5 +22,6 @@ public static void main(String[] args){
 		 counter++;
 	  }
   }
+	System.out.println(a2dArray[99][99]);
 }
 }

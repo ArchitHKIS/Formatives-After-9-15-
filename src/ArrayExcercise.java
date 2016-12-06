@@ -13,6 +13,6 @@ public class ArrayExcercise {
 				System.out.print(bobo[i][b] + " ");
 			}
 			System.out.println("");
+		}
 	}
-}
 }

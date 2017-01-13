@@ -4,7 +4,7 @@ public class ArrayExcercise {
 	public static void main(String[] args) {
 		int[][] bobo = new int[3][4];
 		for (int i = 0; i < bobo.length; i++) {
-			for (int b = 0; b < bobo[0].length; b++) {
+			for (int b = 0; b < bobo[i].length; b++) {
 				bobo[i][b] = ThreadLocalRandom.current().nextInt(1, 10);
 			}
 		}
@@ -14,5 +14,6 @@ public class ArrayExcercise {
 			}
 			System.out.println("");
 		}
+
 	}
 }

@@ -2,14 +2,21 @@ import java.math.*;
 
 public class testeverything {
 	public static void main(String[] args) {
-		BigInteger b = BigInteger.valueOf(2);
-		/*
-		 * BigInteger c = BigInteger.valueOf(2); for (int i = 0; i < 10000000;
-		 * i++) { b = b.multiply(c); System.out.println(b); } String d = "" + b;
-		 * System.out.println(b); System.out.println(d.length());
-		 */
-		String h = "";
-		System.out.println(h.length());
-		System.out.println("Hi");
+		BigDecimal o = BigDecimal.valueOf(0);
+		BigDecimal f = BigDecimal.valueOf(4);
+		int b = 1;
+		for (long i = 1; i < 1000000; i++) {
+			BigDecimal d = BigDecimal.valueOf(i);
+			if (b == 0) {
+				o = o.subtract(f.divide(d, 1000, 1));
+				b = 1;
+
+			}
+			if (b == 1) {
+				o = o.add(f.divide(d, 1000, 1));
+				b = 0;
+			}
+		}
+		System.out.println(o);
 	}
 }
